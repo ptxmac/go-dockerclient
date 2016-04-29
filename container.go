@@ -510,7 +510,10 @@ type HostConfig struct {
 	BlkioWeight      int64                  `json:"BlkioWeight,omitempty" yaml:"BlkioWeight"`
 	Ulimits          []ULimit               `json:"Ulimits,omitempty" yaml:"Ulimits,omitempty"`
 	VolumeDriver     string                 `json:"VolumeDriver,omitempty" yaml:"VolumeDriver,omitempty"`
+	Env              []string               `json:"Env,omitempty" yaml:"Env,omitempty"`
+
 }
+
 
 // StartContainer starts a container, returning an error in case of failure.
 //
